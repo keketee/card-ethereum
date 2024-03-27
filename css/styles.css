@@ -18,4 +18,111 @@ ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #0d192c;
+}
+
+.main {
+  width: 327px;
+  height: 543px;
+  background-color: #15263f;
+  border-radius: 15px;
+  padding: 24px;
+}
+.img {
+  border-radius: 8px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .container:hover::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 255, 247, 0.527);
+    width: 278px;
+    height: 278px;
+    border-radius: 8px;
+  }
+  .container:hover .view {
+    opacity: 1;
+  }
+}
+
+.view {
+  position: absolute;
+  opacity: 0;
+}
+
+.title {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+.text {
+  color: #8bacd9;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+.section {
+  position: relative;
+  display: flex;
+  gap: 90px;
+}
+.section::after {
+  position: absolute;
+  content: "";
+  width: 278px;
+  height: 1px;
+  background-color: white;
+  top: 50px;
+}
+
+.text-eth {
+  color: #00fff8;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+.title-eth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text-title {
+  color: #8bacd9;
+  font-weight: 400;
+  font-size: 15px;
+}
+.title-clock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.img-avatar {
+  width: 33px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.creation {
+  font-family: "Outfit", sans-serif;
+  color: #8bacd9;
+  font-weight: 400;
+  font-size: 15px;
+}
+.name {
+  font-family: "Outfit", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
 }
