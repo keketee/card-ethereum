@@ -27,6 +27,7 @@ body {
   background-color: #15263f;
   border-radius: 15px;
   padding: 24px;
+  margin-inline: auto;
 }
 .img {
   border-radius: 8px;
